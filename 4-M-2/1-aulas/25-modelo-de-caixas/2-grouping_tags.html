@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Estilo da fonte sem serifas */
+            background-color: dimgray; /* Cor de fundo*/
+            margin: 0px; /* Margem (Shorthand)*/
+        }
+
+        header {
+            background-color: white; /* Cor de fundo*/
+            padding: 10px; /* Preenchimento (Shorthand)*/
+            margin: 10px; /* Margem (Shorthand)*/
+        }
+
+        nav {
+            background-color: #797979; /* Cor de fundo*/
+            padding: 3px; /* Preenchimento (Shorthand)*/
+            box-shadow: 3px 5px 4px 1px #000000c4; /* box-shadow alterado no devtools*/
+        }
+
+        nav > a {
+            text-decoration: none; /* Tirou a decoração da ancora*/
+            color: white; /* Cor*/
+            font-weight: bold; /* Peso da fonte negrito*/
+            margin-right: 30px; /* Margem (Shorthand)*/
+        }
+
+        main {
+            background-color: white; /* Cor de fundo*/
+            padding: 10px; /* Preenchimento (Shorthand)*/
+            margin: 10px; /* Margem (Shorthand)*/
+            border-radius: 20px 4px; /* Raio da borda*/
+            box-shadow: 4px 4px 6px 0px #000000c4;
+        }
+
+        article {
+            background-color: lightgray; /* Cor de fundo*/
+        }
+
+        article > p {
+            text-indent: 20px; /* Indentação de texto*/
+        }
+
+        article > aside {
+            background-color: #8f8f8f; /* Cor de fundo*/
+        }
+        
+        footer {
+            background-color: black; /* Cor de fundo*/
+            color: white; /* Cor*/
+            text-align: center; /* Alinha o texto no centro*/
+            padding: 4px; /* Preenchimento*/
+            margin: 0px; /* Margem*/
+        }
+
+        footer > p {
+            margin: 0px; /* Tirando a margem do footer > p */
+        }
+
+
+        /* Transformando o Box-level na medida da inline-box e centralizando*/
+        .center {
+            width: 454px;
+            margin: 10px auto;
+        }
+
+        /* Criando Bola*/
+        .bola {
+            display: inline-block;
+            height: 100px; /* Altura*/
+            width: 100px; /* Largura*/
+            background-color: #ffffff; /* Cor de fundo*/
+           
+            border-radius: 50%; /* Raio da borda*/
+            border: 5px solid #714cd8; /* Tamanho Estilo e Cor*/
+        }
+
+        .bola > p {
+            width: 56px; /* Largura do paragrafo*/
+            margin: 42px auto; /* Alinhando o paragrafo no centro*/
+            font-weight: bold; /* Negrito*/
+        }
+
+        .bola > p > a {
+            text-decoration: none; /* Tirando a decoração dos links*/
+        }
+        
+        </style>
+</head>
+<body>
+    <!-- Divs Semânticas
+            <header> = Cabeçalho
+            <main> = Principal (Conteúdo Principal)
+            <footer> = Rodapé
+            <nav> = Navegação (Usado para menu de navegação)
+    -->
+
+    <!-- tags de agrupamento (grouping tags)
+            <section> = Seção
+            <article> = Artigo
+            <aside> = A parte
+    -->
+
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- Navegação (Usado para Menu de navegação)-->
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Principal (Conteúdo Principal) -->
+        <section id="assuntos"> <!-- Seção-->
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article> <!-- Artigo-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iusto voluptatibus? Animi sequi iure nisi eos ullam neque, cumque sunt tempore consequatur illum molestiae magnam quis totam sit porro saepe?</p>
+                <aside> <!-- A parte-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h1>Esportes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum. Maiores velit, veritatis minus aspernatur blanditiis explicabo architecto? Ratione dolores saepe laboriosam iure, quod earum odit blanditiis eius deserunt voluptas?</p>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido pelo cursoemvideo</p>
+    </footer>
+    <section class="center">
+        <div class="bola"><p><a href="">Menu-1</a></p></div>
+        <div class="bola"><p><a href="">Menu-2</a></p></div>
+        <div class="bola"><p><a href="">Menu-3</a></p></div>
+        <div class="bola"><p><a href="">Menu-4</a></p></div>
+    </section>
+</body>
+</html>

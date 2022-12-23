@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho dos seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem">
+    </picture>
+    <!--Quando a tela encostar em 750px aparecerá a imagem P,Quando a tela encostar em 1050px aparecerá a imagem M,a tela sendo superior a 1050px aparecerá a imagem padrão-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio preload="metadata" controls autoplay loop > <!--(preload)carrega as informações do audio. (controls) carrega o controlador. (autoplay) o proprio nome ja diz, porém o autoplay muita das vezes não funciona pois os navegadores o impede. (loop) quando o audio terminar, ele da um replay.-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>Imfelizmente o seu navegador não consegue reproduzir o áudio. <a href="midia\happy-mistake.mp3" download="happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p><!-- só tem como fzr o download fornçando com linguagem de programação igual em alguns casos com o atributo autoplay-->
+    </audio>
+    <!--MP3 WAV OGG. O Site carregará o audio que o navegador reconhecer. Em uma ordem de cima pra baixo, se o primeiro source não for compativel com o site ele carregará o segundo, e assim por diante. caso não carregue nenhum. deixamos uma mensagem.-->
+</body>
+</html>

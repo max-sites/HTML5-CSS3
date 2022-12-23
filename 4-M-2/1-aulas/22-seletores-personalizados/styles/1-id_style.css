@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*
+    Em HTML é id = em CSS é #
+        Pela regra do W3C, só se pode usa um id com o mesmo nome, no mesmo documento html.
+    Em HTML é class = em CSS é .
+        Com a class, se pode ter vários elementos.
+*/
+
+body {
+    background-color: #92e692;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(0, 77, 0);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    color: #314d31;
+}

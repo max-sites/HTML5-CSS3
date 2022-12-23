@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* SELETORES PERSONALIZADOS
+
+         #  = id
+         .  = class
+         :  = pseudo-class
+         :: = pseudo-element
+         >  = children (filho)
+
+        */
+
+        /* Define a cor do link para red, tira o sublinhado e deixa em negrito*/
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Pseudo-classes representada por :*/
+        /* (Se o site ja foi visitado) ficará com a cor laranja*/
+        a:visited {
+            color: #cf5d00;
+
+        }
+
+        /* (Se passar o mouse por cima) ficará sublinhado e com a cor preta*/
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        /* Se clicar, ficará com a cor azul*/
+        a:active {
+            color: blue;
+        }
+        
+        /*classe*/
+        .especial {
+            background-color: rgb(187, 113, 113);
+        }
+
+        /* Pseudo-Elementos representada por ::*/
+        /* (antes)*/
+        .especial::before {
+            content:"⇒ ";
+            text-decoration: none;
+            font-weight: normal;
+            color: #414141;
+        }
+
+        /* (Depois)*/
+        .especial::after {
+            content: " ⇐"; /* Adiciona a palavra link*/
+            text-decoration: none; /* */
+            font-weight: normal; /* Peso da fonte*/
+            color: #414141; /* Cor*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank" rel="external" class="especial">Site do Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

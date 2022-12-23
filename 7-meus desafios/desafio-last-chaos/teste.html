@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: #8f8f8f;
+            width: 100vw;
+        }
+
+        header {
+            background-color: #C7B16F;
+            width: 100vw;
+
+        }
+
+        header h1 {
+            text-align: center;
+            line-height: 74px;
+        }
+
+        .principal {
+            background-color: black;
+            width: 100vw;
+        }
+
+        .responsive-link {
+            background-color: #ffffff;
+            width: clamp(20px,15vw , 15vw);
+        }
+
+        .link-margem {
+            background-color: #615636;
+            padding: clamp(1vw, 1.05vw, 1.1vw);
+            min-width: 20px;
+            max-width: 100%;
+        }
+
+        .link-margem a {
+            display: block;
+            background-color: #A18F5A;
+            min-width: 20px;
+            max-width: 100%;
+            line-height: clamp(5vw, 80px, 20px);
+            margin-bottom: 5px;
+            text-decoration: none;
+            text-align: center;
+            font-size: clamp(5px, 2vw, 2em); /* cleamp permite selecionar um valor (mínimo, desejado e máximo) */
+        }
+
+        a.link {
+           margin: 0px;
+        }
+
+        .responsive-main {
+            position: relative;
+            background-color: #ffffff;
+            width: 85vw;
+            left: clamp(25px, 15vw, 15vw);
+        }
+
+        .main-margem {
+            background-color: #EDD385;
+            padding: 10px;
+            
+        }
+
+        .main-margem main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .testando {
+            background-color: #A18F5A;
+            height: 30px;
+            width: 100vw;
+        }
+
+        .testando2 {
+            background-color: #615636;
+            height: 20px;
+            width: 100vw;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabeçalho</h1>
+    </header>
+        <div class="principal">
+            <div class="responsive-link">
+                <div class="link-margem">
+                    <a href="#">LINK1</a>
+                    <a href="#">LINK2</a>
+                    <a href="#">LINK3</a>
+                    <a href="#" class="link">LINK4</a>
+                </div>
+            </div>
+
+            <div class="responsive-main">
+                <div class="main-margem">
+                    <main>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsum eius commodi expedita repellendus. Est obcaecati dolorum nihil quae dolore, autem delectus mollitia. Odit perferendis, aperiam ex laboriosam vero nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, vitae quod commodi nulla deserunt molestiae esse numquam amet! Consequuntur quisquam fugit est a eligendi vero quibusdam iusto temporibus corporis totam?</p>
+                    </main>
+                </div>
+            
+            </div>
+
+        </div>
+
+    <div class="testando">
+
+    </div>
+
+    <div class="testando2">
+        
+    </div>
+
+</body>
+</html>

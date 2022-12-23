@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Medieval";
+            src: url("fonts/OldLondon.ttf") format("truetype"), url("fonts/Olondon_.otf") format("opentype");
+            /*
+            tipos de format()
+             - opentype (otf)
+             - truetype (ttf)
+             - embedded-opentype
+             - truetype-aat(Aple Advanced Typography)
+             - svg
+            */
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: "Medieval", serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Atento a si mesmo e ao resto do mundo, o verdadeiro pensador está sempre disposto a aprender. Eu penso, logo existo. Não basta conquistar a sabedoria, é preciso usá-la. Existe apenas um bem, o conhecimento, e um mal, a ignorância.</p>
+</body>
+</html>

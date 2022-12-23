@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #aeaefc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <a href="https://github.com/"></a>
+
+    <h4>Link interno</h4> <!--Recomendo, caso seja do mesmo site!-->
+    <p>_self - vai abrir o link na janela ou frame atual <a href="self/_self.html" target="_self" rel="next">next - </a>Indica que o link é para próxima parte do documento atual</a></p>
+    <p>_top - vai desfazer todos os frames e abrir o destino no navegador completo <a href="self/top/_top.html" target ="_top" rel="prev">prev - </a> indica que o link é para a parte anterior do documento atual</p>
+    <p>_parent - similar ao uso do _top em uma referência à janela mãe nome-do-frame caso esteja usando frames, indica o nome da janela a abrir <a href="self/top/parent/_parent.html" target="_parent" rel="author">author - </a> indica que é um link para o site do autor do artigo atual</p>
+
+    <h4>Links externos em uma nova guia</h4>
+    <p>_blank - abre perfil em nova Janela em branco <a href="https://github.com/" target="_blank" rel="external"> external - </a> indica que é um link para outro site que não faz parte do site.</p>
+
+    <p>Esta página é um oferecimento de <a href="https://www.hostnet.com.br/" target="_blank" rel="nofollow">Hostnet</a></p> <!--notfollow quer dizer que você não da um aval sovre esse conteúdo-->
+
+    <p>Ir para <a href="../index.html" target="_self" rel="prev">Página inicial</a></p>
+
+    <p>Voltar para <a href="self/top/parent/_parent.html" parent="_self" rel="next">Pagina anterior</a></p></p>
+
+</body>
+</html>

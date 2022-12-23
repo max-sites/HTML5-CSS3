@@ -1,0 +1,73 @@
+/* Aceita os tipos de de caracteres acentuados e com cedilha */
+@charset "UTF-8";
+
+/* Fonte download*/
+@font-face { 
+    font-family: "medieval";
+    src: url("../fonts/OldeEnglish.ttf") format("truetype");
+
+/*    TIPOS DE format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat(Aple Advanced Typography)
+        - svg
+*/
+/*  SELETORES PESONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+*/
+}
+
+body {
+    background-image: linear-gradient(0deg, orange, #cf4c00 45%, #882b00 95%); /* Cria um degrade (gradient)*/
+    background-attachment: fixed; /* deixa o background Fixo na página sem se repetir*/
+}
+
+p {
+    text-indent: 20px; /* indenta o texto */
+}
+
+div {
+    display: inline-block; /* Deixa todas as divs na mesma linha em forma de bloco */
+    text-align: center; /* Centralizando texto*/
+    width: 100px; /* Largura*/
+    background-color: #6059b9; /* Cor de fundo do Display*/
+    border-radius: 5px; /* Cria uma curva na borda*/
+    border: 2px solid #000000; /* Borda = Tamanho, Estilo e Cor*/
+    box-shadow: 0px 1px 1px #ffffff, 0px -3px 2px black; /* Sombra do texto (sombra 1, sombra 2, suavisação e cor da sombra)*/
+}
+
+/* Filho de <div> > p*/
+div > p {
+    display: none; /* desativa o p dentro do display <div>*/
+}
+
+/*passar o mouse por cima*/
+div:hover {
+    background-color: #938edf; /* cor de fundo*/
+}
+
+/*passar o mouse por cima*/
+div:hover > p {
+    display: block; /* faz o <p> ser ativo quando passar o mouse por cima*/
+}
+
+/* Representação do ID*/
+h1#principal {
+    line-height: 0.2; /* Controla as entrelinhas */
+    font-family: "medieval", Arial, sans-serif; /* Tipo de fonte */
+    font-size: 4em; /* Tamanho da fonte */
+    font-weight: 100; /* Peso da fonte */
+    color: #2e703d; /* Cor do texto */
+    text-shadow: 0px 2px #fff4de, 0px -2px 2px black; /* Sombra do texto (sombra 1, sombra 2, suavisação e cor da sombra)*/
+}
+
+/* Representação da Class*/
+.pseudo{
+    color: #008779; /* Cor do texto*/
+    text-shadow: 0px 2px #fff4de, 0px -2px 2px black; /* Sombra do texto (sombra 1, sombra 2, suavisação e cor da sombra)*/
+}

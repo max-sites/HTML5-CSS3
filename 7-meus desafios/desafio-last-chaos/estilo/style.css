@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "ReggaeOne";
+    src: url("/desafio-last-chaos/fonts/ReggaeOne-Regular.ttf") format("truetype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #181313;
+    margin: auto;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: linear-gradient(180deg, #413030, rgb(24, 17, 17));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    margin: auto;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+}
+
+nav {
+    width: 100px;
+    background-color: rgb(66, 66, 66);
+    padding: 5px 0px 5px 0px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    line-height: 2em;
+
+    text-decoration: none;
+    font-family: "ReggaeOne", 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 1px black;
+
+    font-weight: bold;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    margin: 0px 5px 5px 5px;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+nav .margem {
+    margin: 0px 5px 0px 5px;
+}
+
+nav a:hover {
+    background-color: #b9b9b9;
+    box-shadow: 2px 2px 6px #000000cc, -2px -2px 6px #000000cc, inset 1px 1px 1px #ffffff, inset -1px -1px 1px #ffffff;
+    text-shadow: -1px -1px 1px #ffffff, 2px 2px 1px black;
+    color: rgb(0, 0, 0);
+}
+
+section {
+    background-color: #8d8a92;
+    position: relative;
+    left: 100px;
+    bottom: 436px;
+    margin: 0px 100px -435px 0px;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 691px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer {
+    background-color: rgb(63, 0, 136);
+}
