@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos Fundos</title>
+
+    <style> /* CSS*/
+
+        div.quadrado { /* Classe*/
+            display: inline-block; /* deixa o bloco em linha */
+            background-color: lightgray; /* cor de gundo*/
+            border: 2px solid black; /* borda shorthand*/
+            border-radius: 10px; /* raio da borda*/
+            width: 300px; /* largura*/
+            height: 300px; /* altura*/
+        }
+
+        div#q1 { /* ID*/
+            background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png"); /* imagem de fundo Url de site*/
+            background-size: 50px 50px; /* tamanho do fundo*/
+            /* por padrão o background é repetitivo*/
+        }
+
+        div#q2 { /* ID*/
+            background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png");/* imagem de fundo Url de site*/
+            background-size: 270px; /* tamanho da imagem de fundo*/
+            background-repeat: no-repeat; /* faz com o background n se torne repetitivo*/
+        }
+
+        div#q3 { /* ID*/
+            background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png"); /* imagem de fundo Url de site*/
+            background-size: 50px; /* tamanho da imagem de fundo*/
+            background-repeat: repeat-x; /* faz com que a imagem só se repita no eixo x*/
+        }
+
+        div#q4 { /* ID*/
+            background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png"); /* imagem de fundo Url de site*/
+            background-size: 50px; /* tamanho da imagem de fundo*/
+            background-repeat: repeat-y; /* faz com que a imagem só se repita no eixo y*/
+        }
+    </style>
+
+</head>
+<body> 
+    <div class="quadrado" id="q1"></div> <!-- Divisão com classe e id 1-->
+    <div class="quadrado" id="q2"></div> <!-- Divisão com classe e id 2-->
+    <div class="quadrado" id="q3"></div> <!-- Divisão com classe e id 3-->
+    <div class="quadrado" id="q4"></div> <!-- Divisão com classe e id 4-->
+</body>
+</html>
