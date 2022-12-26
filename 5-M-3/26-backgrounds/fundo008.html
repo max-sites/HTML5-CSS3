@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        body {
+            width: 100vw;
+        }
+        #container {
+            /* Colocando um target no background e deixando ele com 100% do tamanho do background*/
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+
+            /* por padrão toda caixa tem o position relative*/
+            position: relative;
+            height: 95vh;
+            background-color: purple;
+            
+        }
+
+        #conteudo {
+            /* Colocando um target no background e deixando ele com 100% do tamanho do background*/
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+
+            /* pega a caracteristica de posicionamento do pai, no caso #container*/
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            /* espaço de 50% a esquerda*/
+            left: 50%;
+            /* espaço de 50% a cima*/
+            top: 50%;
+
+            /* "Centraliza o Pivô de movimentação da caixa", por padrão este pivô é posicionado em top 0px e left 0px*/
+            transform: translate(-50%, -50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
