@@ -28,7 +28,7 @@ header {
 
 header > h1 {
     padding-top: 50px;
-    font-variant: small-caps; /* Toda primeira letra de cada palavra fica maiúscula*/
+    font-variant: small-caps;
     font-family: var(--font3);
     font-size: 10vw;
 }
@@ -85,8 +85,6 @@ section.imagem > p {
 section#img01 {
     background-image: url("../imagens/background001.jpg");
     background-position: right center;
-
-    
 }
 
 section#img02 {
