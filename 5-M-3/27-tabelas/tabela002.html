@@ -11,6 +11,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+            background-color: #aaaaaa;
         }
 
         table{
@@ -45,20 +46,29 @@
             text-align: center;
         }
 
-        tr td:nth-child(1){ /* Seleciona o primeiro elemento td de cada tr*/
-            background-color: rgba(71, 74, 119, 0.39);
+        tbody tr td:nth-child(1){ /* Seleciona o primeiro elemento td de cada tr*/
+            background-color: #4c82c963;
             width: 50px;
         }
 
-        tr:nth-child(2n){
-            background-color: #acacac;
+        tbody tr:nth-child(odd){ /* 2n-1 impar*/ 
+            background-color: #9eb0b3;
         }
 
-        tr td:nth-child(3){ /*  Seleciona o terceiro elemento td de cada tr*/
+        tbody tr:nth-child(even){ /* 2n par*/
+            background-color: #5f7180;
+        }
+
+        tbody tr td:nth-child(3){ /*  Seleciona o terceiro elemento td de cada tr*/
             text-align: right;
             background-color: #62898b57;
             
         }
+
+        tfoot td:nth-child(3){
+            text-align: right;
+        }
+
 
     </style>
 
@@ -286,8 +296,10 @@
 
         <tfoot>
             <tr>
+                <td>28</td>
                 <th scope="row">Total de Habitantes</th> <!--Escopo da linha-->
                 <td><strong>207.883.699</strong></td>
+                <td>100%</td>
             </tr>
         </tfoot>
 
