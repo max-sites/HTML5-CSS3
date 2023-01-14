@@ -17,16 +17,24 @@
             margin: auto;
             width: 600px;
             border-collapse: collapse; /* junta as bordas*/
-            border: 2px solid rgb(115, 81, 209);
+            border: 2px solid #7351d1;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 2px solid #7351d1;
         }
 
         thead, tfoot{
-            background-color: #949494;
+            background-color: #2b2b2b;
             color: white;
         }
 
         th{
-            border: 1px solid #494949;
+            border: 1px solid #4b4b4b;
             height: 50px;
             padding: 10px;
         }
@@ -59,7 +67,8 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
-        TABLE
+        TABLE  
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -69,12 +78,15 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da população total</th>
+                <th scope="col">Posição</th> <!--Escopo da coluna-->
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da população total</th>
             </tr>
         </thead>
             
@@ -274,7 +286,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!--Escopo da linha-->
                 <td><strong>207.883.699</strong></td>
             </tr>
         </tfoot>
