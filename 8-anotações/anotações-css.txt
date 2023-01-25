@@ -58,7 +58,7 @@ Use a propriedade abreviada de padding com quatro valores:
 
 padding: 25px 50px 75px 100px;
 
-A propriedade padding é uma propriedade abreviada para as seguintes propriedades individuais de padding:
+A propriedade padding é uma propriedade abreviada para as seguintes propriedades individuais de: 
 
 padding-top
 padding-right
