@@ -15,7 +15,17 @@
 <body>
     <!--Não se faz formulário sem relacionar o label ao input-->
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> 
+
+    <!-- 
+        method="get" só pode enviar até 3mil bytes e não esconde dados.
+
+        method="post" esconte os dados, mas não protege.
+            post é usado para:
+                dados sensíveis.
+                mais de 3mil bytes.
+                envio de arquivos.
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome">
