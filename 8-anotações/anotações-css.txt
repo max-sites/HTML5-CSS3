@@ -1,4 +1,6 @@
 
+[CSS]
+
 Use a propriedade abreviada para definir as propriedades do plano de fundo em uma declaração:
 
 background: #ffffff url("img_tree.png") no-repeat right top;
