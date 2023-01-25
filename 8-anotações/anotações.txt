@@ -1,0 +1,66 @@
+
+Use a propriedade abreviada para definir as propriedades do plano de fundo em uma declaração:
+
+background: #ffffff url("img_tree.png") no-repeat right top;
+
+
+Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+----------------------------------------------------------------------------------
+
+Use font para definir várias propriedades de fonte em uma declaração:
+
+font: italic small-caps bold 12px/30px Georgia, serif;
+
+Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+----------------------------------------------------------------------------------
+
+Use border para definir várias propriedades de borda em uma declaração:
+
+border: 5px solid red;
+
+Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+border-width
+border-style (required)
+border-color
+
+----------------------------------------------------------------------------------
+
+Use a propriedade abreviada de margin com quatro valores:
+
+margin: 10px 5px 10px 5px;
+
+Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+margin-top: 10px;
+margin-right: 5px;
+margin-bottom: 10px;
+margin-left: 5px;
+
+----------------------------------------------------------------------------------
+Use a propriedade abreviada de padding com quatro valores:
+
+padding: 25px 50px 75px 100px;
+
+A propriedade padding é uma propriedade abreviada para as seguintes propriedades individuais de padding:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+----------------------------------------------------------------------------------
