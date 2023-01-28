@@ -13,10 +13,18 @@
     <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
+            <!-- criando uma seleção de todos os estados com o select e option -->
             <label for="iest">Estado</label>
             <select name="est" id="iest">
 
+                <!-- 
+                    opção de seleção
+                 -->
                 <option value="" selected>--- Escolha ---</option>
+
+                <!-- 
+                    cria um grupo de opções
+                 -->
                 <optgroup label="Região norte">
 
                     <option value="TO">Tocantins</option>
@@ -26,8 +34,7 @@
                     <option value="AC">Acre</option>
                     <option value="RO">Rondônia</option>
                     <option value="PA">Pará</option>
-                    
-
+                
                 </optgroup>
 
                 <optgroup label="Região Nordeste">
@@ -75,6 +82,7 @@
         </p>
 
         <p>
+            <!-- Caso o usuário desejar adicionar novas informações utilizamos o datalist com um id e colocamos um list no input com o nome do id do datalist-->
             <label for="iprof">Profissão</label>
             <input type="text" name="prof" id="iprof" list="lstprof">
             <datalist id="lstprof">
@@ -85,6 +93,8 @@
             </datalist>
         </p>
 
+
+        <!-- Cria uma area de texto -->
         <p>
             <label for="imsg">Mensagem</label> <br>
             <textarea name="msg" id="imsg" cols="30" rows="10">
